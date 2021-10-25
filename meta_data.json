@@ -1,0 +1,16 @@
+{
+    "categories": {
+        "0": "analytics",
+        "1": "customer support",
+        "2": "productivity",
+        "3": "technical",
+        "4": "video"
+    },
+    "demo_page": "https://whiteboardplugin.bubbleapps.io",
+    "description": "Boost your creativity! 🙌\n\nBe on the same page with your team through Whiteboard.\n\n● Changes you make are broadcasted to other participants within a few seconds.\n●  Create as many boards as you need.\n● Share with anyone! Invite your team mates or friends to your boards to share ideas.",
+    "image": "//s3.amazonaws.com/appforest_uf/f1635087817558x553058910813549950/board_logo.png",
+    "license": "private",
+    "link": "https://www.whiteboard.team/documents/api",
+    "name": "Whiteboard API - Visual Collaboration",
+    "plugin_instructions": "1- Draw \"Whiteboard\" element into your page\n\n2- Fill necessary fields\n\n3- Enter your API Key from the \"Whiteboard\" plugin in the \"Plugins\" tab\n\nThat's all!\n\n- The minimum width of the whiteboard element should be 800px for it to work properly.\n\nNote: You can find your keys from here: https://www.whiteboard.team/app/panel/developers\n(You can pass client secret in Api-Key)"
+}

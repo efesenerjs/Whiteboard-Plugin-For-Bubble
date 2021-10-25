@@ -1,0 +1,98 @@
+{
+    "calls": {
+        "AAp": {
+            "body_type": "form_data",
+            "data_type": "empty",
+            "doc_link": "https://www.whiteboard.team/documents/api",
+            "headers": {
+                "ABQ": {
+                    "doc": "You can pass client secret in Api-Key header. Get your \"Client secret key\" -> https://www.whiteboard.team/app/panel/developers",
+                    "key": "Api-Key",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Post Image",
+            "no_types": true,
+            "params": {
+                "ABR": {
+                    "doc": "Current User's ID",
+                    "key": "Uid",
+                    "private": true,
+                    "value": ""
+                },
+                "ABS": {
+                    "binary_file": true,
+                    "doc": "Image to upload",
+                    "key": "File",
+                    "optional": false,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 0,
+            "should_reinitialize": true,
+            "url": "https://www.whiteboard.team/api/v1/boards/[boardCode]/upload",
+            "url_params": {
+                "ABP": {
+                    "doc": "Each board is identified by a unique string code. It should be a unique and unguessable string.",
+                    "key": "boardCode",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "ABT": {
+            "body": "{\n\t\"file\":{\n        \"filename\": \"<filename>\",\n        \"contents\": \"<content>\"\n    }\n\n}\n            \n",
+            "body_params": {
+                "ABZ": {
+                    "doc": "File name",
+                    "key": "filename",
+                    "private": true,
+                    "value": "example.jpg"
+                },
+                "ABa": {
+                    "doc": "Image in base64 format",
+                    "key": "content",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "doc_link": "https://www.whiteboard.team/documents/api",
+            "headers": {
+                "ABX": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Save File",
+            "publish_as": "action",
+            "rank": 1,
+            "ret_value": "api.1634978854235x822226395116601300.plugin_api.ABT",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABT\":{\"caption\":\"Save File\",\"fields\":{\"_p_status\":{\"ret_value\":\"image\",\"caption\":\"status\",\"sample_value\":\"success\",\"path\":[\"status\"]}}}}",
+            "url": "[Website Home URL]api/1.1/wf/[Endpoint Name]",
+            "url_params": {
+                "ABU": {
+                    "key": "Website Home URL",
+                    "private": true,
+                    "value": ""
+                },
+                "ABV": {
+                    "doc": "",
+                    "key": "Endpoint Name",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        }
+    },
+    "human": "Whiteboard"
+}

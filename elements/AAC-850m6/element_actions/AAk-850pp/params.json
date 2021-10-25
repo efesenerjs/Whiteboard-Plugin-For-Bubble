@@ -1,0 +1,13 @@
+{
+    "caption": "Notification",
+    "doc": "Shows a notification on the whiteboard.",
+    "fields": {
+        "AAl": {
+            "caption": "Message",
+            "editor": "DynamicValue",
+            "name": "message",
+            "rank": 0,
+            "value": "text"
+        }
+    }
+}

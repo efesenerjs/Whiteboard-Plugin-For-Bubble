@@ -1,0 +1,145 @@
+{
+    "add_hover_pressed": true,
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "Whiteboard",
+    "events": {
+        "AAE": {
+            "caption": "Error",
+            "doc": "The event will call when any error occurred.",
+            "name": "error"
+        },
+        "AAG": {
+            "caption": "Ready",
+            "doc": "The event will call when the board has been loaded.",
+            "name": "ready"
+        },
+        "AAM": {
+            "caption": "User Joined",
+            "doc": "The event will raise when any other participant joins the board.",
+            "name": "userJoined"
+        },
+        "AAN": {
+            "caption": "User Left",
+            "doc": "The event will raise when any other participant leaves the board.",
+            "name": "userLeft"
+        }
+    },
+    "fields": {
+        "AAH": {
+            "caption": "Client ID",
+            "doc": "Get your client ID -> https://www.whiteboard.team/panel/developers",
+            "editor": "DynamicValue",
+            "name": "clientId",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAS": {
+            "caption": "Board Code",
+            "doc": "Each board is identified by a unique string code. It should be a unique and unguessable string.",
+            "editor": "DynamicValue",
+            "name": "boardCode",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAT": {
+            "caption": "Role",
+            "default_val": "editor",
+            "doc": "Set the role of participant. Roles are 'editor' who can edit and 'viewer' who can view only.",
+            "editor": "Dropdown",
+            "name": "role",
+            "options": "editor,viewer",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAU": {
+            "caption": "Display Name",
+            "doc": "Set the display name of the current user.",
+            "editor": "DynamicValue",
+            "name": "displayName",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "AAV": {
+            "caption": "Tool",
+            "default_val": "pen",
+            "doc": "With this option you can set a default tool",
+            "editor": "Dropdown",
+            "name": "tool",
+            "options": "pan,pen,line,arrow,circle,filledCircle,rectangle,filledRectangle,text,stickyNote,select",
+            "rank": 4
+        }
+    },
+    "icon": "ion-android-checkbox-blank",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "BoxShadow": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "AAF": {
+            "caption": "Error message",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "errorMessage",
+            "value": "text"
+        },
+        "AAL": {
+            "caption": "Current User ID",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "currentUserId",
+            "value": "text"
+        },
+        "AAO": {
+            "caption": "Joined User ID",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "joinedUserID",
+            "value": "text"
+        },
+        "AAP": {
+            "caption": "Joined User Display Name",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "joinedUserDisplayName",
+            "value": "text"
+        },
+        "AAQ": {
+            "caption": "Left User ID",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "leftUserID",
+            "value": "text"
+        },
+        "AAR": {
+            "caption": "Left User Display Name",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "leftUserDisplayName",
+            "value": "text"
+        },
+        "AAn": {
+            "caption": "Board Image",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "boardImage",
+            "value": "text"
+        }
+    }
+}
